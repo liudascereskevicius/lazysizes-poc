@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>Test 1</title>
+        <base href="http://localhost:3000/" target="_blank">
+        <script>
+            window.lazySizesConfig = window.lazySizesConfig || {};
+            window.lazySizesConfig.loadMode = 2;
+        </script>
+        <script src="http://afarkas.github.io/lazysizes/lazysizes.min.js"></script>
+        <style>
+            img[data-sizes="auto"] {
+                display: block; width: 100%;
+            }
+
+            .blur-up {
+                -webkit-filter: blur(5px);
+                filter: blur(5px);
+                transition: filter 300ms, -webkit-filter 300ms;
+            }
+
+            .blur-up.lazyloaded {
+                -webkit-filter: blur(0);
+                filter: blur(0);
+            }
+
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ember.js/2.18.2/ember.debug.js"></script>
+    </head>
+    <body>
+        <img
+            src="1.jpg?w=10"
+            data-sizes="auto"
+            data-srcset="1.jpg?w=128 128w,
+                1.jpg?w=320 320w,
+                1.jpg?w=640 640w,
+                1.jpg?w=1080 1080w"
+            class="lazyload blur-up"
+            />
+        <img
+            src="2.jpg?w=10"
+            data-sizes="auto"
+            data-srcset="2.jpg?w=128 128w,
+                2.jpg?w=320 320w,
+                2.jpg?w=640 640w,
+                2.jpg?w=1080 1080w"
+            class="lazyload blur-up"
+            />
+        <img
+            src="3.jpg?w=10"
+            data-sizes="auto"
+            data-srcset="3.jpg?w=128 128w,
+                3.jpg?w=320 320w,
+                3.jpg?w=640 640w,
+                3.jpg?w=1080 1080w"
+            class="lazyload blur-up"
+            />
+        <img
+            src="4.jpg?w=10"
+            data-sizes="auto"
+            data-srcset="4.jpg?w=128 128w,
+                4.jpg?w=320 320w,
+                4.jpg?w=640 640w,
+                4.jpg?w=1080 1080w"
+            class="lazyload blur-up"
+            />
+        <img
+            src="5.jpg?w=10"
+            data-sizes="auto"
+            data-srcset="5.jpg?w=128 128w,
+                5.jpg?w=320 320w,
+                5.jpg?w=640 640w,
+                5.jpg?w=1080 1080w"
+            class="lazyload blur-up"
+            />
+        <img
+            src="6.jpg?w=10"
+            data-sizes="auto"
+            data-srcset="6.jpg?w=128 128w,
+                6.jpg?w=320 320w,
+                6.jpg?w=640 640w,
+                6.jpg?w=1080 1080w"
+            class="lazyload blur-up"
+            />
+        <img
+            src="7.jpg?w=10"
+            data-sizes="auto"
+            data-srcset="7.jpg?w=128 128w,
+                7.jpg?w=320 320w,
+                7.jpg?w=640 640w,
+                7.jpg?w=1080 1080w"
+            class="lazyload blur-up"
+            />
+        <img
+            src="8.jpg?w=10"
+            data-sizes="auto"
+            data-srcset="8.jpg?w=128 128w,
+                8.jpg?w=320 320w,
+                8.jpg?w=640 640w,
+                8.jpg?w=1080 1080w"
+            class="lazyload blur-up"
+            />
+        <img
+            src="9.jpg?w=10"
+            data-sizes="auto"
+            data-srcset="9.jpg?w=128 128w,
+                9.jpg?w=320 320w,
+                9.jpg?w=640 640w,
+                9.jpg?w=1080 1080w"
+            class="lazyload blur-up"
+            />
+        <img
+            src="10.jpg?w=10"
+            data-sizes="auto"
+            data-0srcset="10.jpg?w=128 128w,
+                10.jpg?w=320 320w,
+                10.jpg?w=640 640w,
+                10.jpg?w=1080 1080w"
+            class="lazyload blur-up"
+            />
+    </body>
+</html>
